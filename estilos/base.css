@@ -26,10 +26,12 @@ header {
     color: #fff;
 }
 
-header h1 {
+header #course-title {
+    display: block;
     font-weight: 500;
     padding: 2rem;
-
+    font-size: 2rem;
+    text-align: center;
 }
 
 header nav ul {
