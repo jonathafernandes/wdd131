@@ -1,0 +1,131 @@
+:root {
+	--cor-principal: #410d68;
+	--cor-fundo: #fff;
+	--cor-texto: #111;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	color: var(--cor-texto);
+	background-color: var(--cor-fundo);
+	font-family: "Geist", sans-serif;
+	line-height: 1.2;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1.25rem 1.5rem;
+	color: #fff;
+	background-color: var(--cor-principal);
+}
+
+.marca {
+	margin: 0;
+	font-size: 1.75rem;
+	font-weight: 700;
+}
+
+.menu-botao {
+	display: block;
+	border: 0;
+	color: #fff;
+	background: transparent;
+	font-size: 2rem;
+	line-height: 1;
+}
+
+nav {
+	display: none;
+	position: absolute;
+	top: 4.6rem;
+	right: 0;
+	left: 0;
+	padding: 1rem;
+	background: var(--cor-principal);
+	text-align: center;
+	z-index: 1;
+}
+
+nav.aberto {
+	display: flex;
+	flex-direction: column;
+	gap: 0.35rem;
+}
+
+.menu-botao::before {
+	content: "☰";
+}
+
+.menu-botao.aberto::before {
+	content: "X";
+}
+
+.menu-botao {
+	cursor: pointer;
+}
+
+nav a {
+	padding: 0.55rem 0.75rem;
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+main {
+	width: min(100% - 2rem, 72rem);
+	margin: 0 auto;
+	padding: 2rem 0 3rem;
+}
+
+h1 {
+	margin: 0 0 1.5rem;
+	text-align: center;
+}
+
+.galeria {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2.5rem;
+}
+
+figure {
+	margin: 0;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+figure img {
+	display: block;
+	width: 100%;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+}
+
+figcaption {
+	padding: 0.5rem 0;
+	color: var(--cor-principal);
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+footer {
+    background: #593d91;
+    padding: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    grid-column: 1 / 4;
+    color: #fff;
+}
+
+#ultimaModificacao {
+    font-size: 14px;
+}
