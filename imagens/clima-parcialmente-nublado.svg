@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 72" role="img" aria-labelledby="titulo">
+  <title id="titulo">Parcialmente nublado</title>
+  <circle cx="65" cy="25" r="16" fill="#f5c542"/>
+  <path d="M25 57a17 17 0 1 1 5-33 22 22 0 0 1 42 8 13 13 0 1 1 2 25H25Z" fill="#fff" stroke="#00205b" stroke-width="4" stroke-linejoin="round"/>
+</svg>
