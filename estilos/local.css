@@ -1,3 +1,9 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
  :root {
 	--vermelho-falkland: #C8102E;
 	--azul-falkland: #00205B;
@@ -13,6 +19,7 @@ body {
 	margin: 0;
 	color: var(--texto);
 	background: #f1f1ef;
+	font-family: "Geist", sans-serif;
 }
 
 header {
@@ -98,8 +105,11 @@ main {
 }
 
 footer {
-	margin: 0;
-	background: var(--vermelho-falkland);
+    background: var(--vermelho-falkland);
+	padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 4;
+    color: #fff;
 }
 
 #ultimaModificacao {
