@@ -5,12 +5,12 @@ const umidade = 30;
 const velocidadeVento = 19;
 
 function calcularSensacaoTermica(temperatura, umidade) {
-    return sensacaoTermica = temperatura + umidade * 0.1;
+    return temperatura + umidade * 0.1;
 }
 
 if (temperatura <= 10 && velocidadeVento > 4.8) {
-    calcularSensacaoTermica(temperatura, umidade)
-    sensacao.innerHTML = `<dd><dt>Sensação térmica: ${sensacaoTermica}</dt></dd>`;
+    const sensacaoTermica = calcularSensacaoTermica(temperatura, umidade);
+    sensacao.innerHTML = `<dt>Sensação térmica:</dt><dd>${sensacaoTermica} °C</dd>`;
 } else {
-    sensacao.innerHTML = "<dt>Temperatura: N/A</dt>";
+    sensacao.innerHTML = "<dt>Sensação térmica:</dt><dd>N/A</dd>";
 }
