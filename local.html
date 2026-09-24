@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página sobre um local do curso WDD 131 – Fundamentos da Web Dinâmica">
+    <meta name="author" content="Jonatha Fernandes">
+    <title>Local - Jonatha Fernandes</title>
+    <link rel="stylesheet" href="estilos/templos.css">
+    <link rel="stylesheet" href="estilos/templos-grande.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilos/base.css">
+    <link rel="stylesheet" href="estilos/local.css">
+    <script src="scripts/local.js" defer></script>
+    <script src="scripts/obterdatas.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Ilhas Falkland</h1>
+    </header>
+    <main>
+        <picture class="imagem-local">
+            <source media="(max-width: 699px)" srcset="imagens/ilhas-falkland-pequeno.webp">
+            <img src="imagens/ilhas-falkland-grande.webp" alt="Paisagem das Ilhas Falkland">
+        </picture>
+
+        <section class="painel painel-dados" aria-labelledby="titulo-dados">
+            <h2 id="titulo-dados">Dados</h2>
+            <dl>
+                <div><dt>Área:</dt><dd>12.173 km²</dd></div>
+                <div><dt>População:</dt><dd>3.662</dd></div>
+                <div><dt>Capital:</dt><dd>Stanley</dd></div>
+                <div><dt>Idioma:</dt><dd>Inglês</dd></div>
+                <div><dt>Moeda:</dt><dd>Libra das Falkland</dd></div>
+                <div><dt>Fuso horário:</dt><dd>UTC-3</dd></div>
+                <div><dt>Código telefônico:</dt><dd>+500</dd></div>
+                <div><dt>Domínio:</dt><dd>.fk</dd></div>
+            </dl>
+        </section>
+
+        <section class="painel painel-clima" aria-labelledby="titulo-clima">
+            <h2 id="titulo-clima">Clima</h2>
+            <dl>
+                <div><dt>Temperatura:</dt><dd>8 °C</dd></div>
+                <div><dt>Condições:</dt><dd>Parcialmente nublado</dd></div>
+                <div><dt>Vento:</dt><dd>19 km/h</dd></div>
+                <div id="sensacao" class="sensacao"><dd></dd></div>
+            </dl>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="anoatual"></span> Jonatha Fernandes - Maceió, AL</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+</body>
+
+</html>
