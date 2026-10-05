@@ -23,8 +23,18 @@ let relatorioEstudante = [11, 42, 33, 64, 29, 37, 44];
 //     };
 // })
 
-for (let i in relatorioEstudante) {
-    if (relatorioEstudante[i] < LIMITE) {
-        console.log(relatorioEstudante[i])
-    }
+// for (let i in relatorioEstudante) {
+//     if (relatorioEstudante[i] < LIMITE) {
+//         console.log(relatorioEstudante[i])
+//     }
+// }
+
+function calcular(a, b, callback) {
+    callback(a + b);
 }
+
+function mostrarResultado(resultado) {
+    console.log('O resultado é: ' + resultado);
+}
+
+calcular(2, 3, mostrarResultado)
