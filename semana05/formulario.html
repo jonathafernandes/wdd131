@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compartilhe sua experiência avaliando um produto.">
+    <meta name="author" content="Jonatha Fernandes">
+    <title>Formulário de Avaliação de Produto - WDD 131</title>
+    <link rel="stylesheet" href="estilos/design.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="scripts/formulario.js" defer></script>
+</head>
+
+<body>
+    <header class="page-header">
+        <h1>Avaliação do Produto</h1>
+        <p class="intro">Conte para nós como foi sua experiência. Os campos marcados com <span
+                aria-label="obrigatório">*</span> são obrigatórios.</p>
+    </header>
+
+    <main>
+        <form action="avaliacao.html" method="get">
+            <div class="form-field">
+                <label for="produto">Nome do Produto <span aria-hidden="true">*</span></label>
+                <select id="produto" name="produto" required>
+                    <option value="" disabled selected>Selecione um Produto...</option>
+                </select>
+            </div>
+
+            <fieldset>
+                <legend>Classificação Geral <span aria-hidden="true">*</span></legend>
+                <p class="field-hint">Escolha de 1 (baixa) a 5 (alta).</p>
+                <div class="rating-options">
+                    <label for="classificacao-1">
+                        <input id="classificacao-1" type="radio" name="classificacao" value="1" aria-label="1 estrela"
+                            required>
+                        <span aria-hidden="true">☆</span>
+                    </label>
+                    <label for="classificacao-2">
+                        <input id="classificacao-2" type="radio" name="classificacao" value="2" aria-label="2 estrelas"
+                            required>
+                        <span aria-hidden="true">☆</span>
+                    </label>
+                    <label for="classificacao-3">
+                        <input id="classificacao-3" type="radio" name="classificacao" value="3" aria-label="3 estrelas"
+                            required>
+                        <span aria-hidden="true">☆</span>
+                    </label>
+                    <label for="classificacao-4">
+                        <input id="classificacao-4" type="radio" name="classificacao" value="4" aria-label="4 estrelas"
+                            required>
+                        <span aria-hidden="true">☆</span>
+                    </label>
+                    <label for="classificacao-5">
+                        <input id="classificacao-5" type="radio" name="classificacao" value="5" aria-label="5 estrelas"
+                            required>
+                        <span aria-hidden="true">☆</span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <div class="form-field">
+                <label for="data-instalacao">Data de Instalação <span aria-hidden="true">*</span></label>
+                <input id="data-instalacao" name="data-instalacao" type="date" required>
+            </div>
+
+            <fieldset>
+                <legend>Recursos Úteis</legend>
+                <p class="field-hint">Selecione todos os recursos que você achou úteis.</p>
+                <div class="checkbox-options">
+                    <label for="facilidade-instalacao">
+                        <input id="facilidade-instalacao" name="recursos" type="checkbox"
+                            value="facilidade-de-instalacao">
+                        Facilidade de instalação
+                    </label>
+                    <label for="durabilidade">
+                        <input id="durabilidade" name="recursos" type="checkbox" value="durabilidade">
+                        Durabilidade
+                    </label>
+                    <label for="desempenho">
+                        <input id="desempenho" name="recursos" type="checkbox" value="desempenho">
+                        Desempenho
+                    </label>
+                    <label for="design">
+                        <input id="design" name="recursos" type="checkbox" value="design">
+                        Design
+                    </label>
+                </div>
+            </fieldset>
+
+            <div class="form-field">
+                <label for="avaliacao">Avaliação Escrita <span class="optional">(opcional)</span></label>
+                <textarea id="avaliacao" name="avaliacao" rows="5"
+                    placeholder="Compartilhe mais detalhes sobre sua experiência..."></textarea>
+            </div>
+
+            <div class="form-field">
+                <label for="nome-usuario">Nome de Usuário <span class="optional">(opcional)</span></label>
+                <input id="nome-usuario" name="nome-usuario" type="text" autocomplete="name">
+            </div>
+
+            <button class="submit-button" type="submit">Enviar Avaliação</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2026 Jonatha Fernandes - Maceió, AL</p>
+    </footer>
+</body>
+
+</html>
