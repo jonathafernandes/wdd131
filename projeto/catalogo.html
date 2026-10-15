@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Catálogo da Indie Vault com recomendações de jogos independentes por gênero e atmosfera." />
+  <title>Catálogo | Indie Vault</title>
+  <link rel="stylesheet" href="./estilos/styles.css" />
+  <script src="./script/main.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand" aria-label="Indie Vault logo e marca">
+        <img src="imagens/logo.svg" alt="Logo da Indie Vault" />
+        <div class="brand-text">
+          <p class="brand-name">Indie Vault</p>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Menu principal">
+        <a href="index.html">Início</a>
+        <a class="current" href="catalogo.html">Catálogo</a>
+        <a href="curiosidades.html">Curiosidades</a>
+        <a href="referencias.html">Referências</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="content-section" aria-labelledby="catalog-title">
+        <div class="catalog-header">
+          <div class="heading-block">
+            <h1 id="catalog-title">Catálogo indie</h1>
+            <p>Experiências selecionadas por identidade visual, mecânicas originais e impacto emocional.</p>
+          </div>
+
+          <div class="filter-list" aria-label="Filtros de categoria">
+            <button class="filter-pill active" type="button" data-category="Todos" aria-pressed="true">
+              Todos
+            </button>
+
+            <button class="filter-pill" type="button" data-category="RPG" aria-pressed="false">
+              RPG
+            </button>
+
+            <button class="filter-pill" type="button" data-category="Plataforma" aria-pressed="false">
+              Plataforma
+            </button>
+
+            <button class="filter-pill" type="button" data-category="Exploração" aria-pressed="false">
+              Exploração
+            </button>
+
+            <button class="filter-pill" type="button" data-category="Narrativa" aria-pressed="false">
+              Narrativa
+            </button>
+          </div>
+        </div>
+
+        <p id="storage-message" class="storage-message" role="status" hidden></p>
+
+        <div class="card-grid" id="game-list" aria-live="polite"></div>
+
+        <div class="card-grid" id="game-list" aria-live="polite">
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <p>© 2026 Indie Vault</p>
+
+      <div class="footer-links" aria-label="Links do rodapé">
+        <a href="index.html">Início</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="curiosidades.html">Curiosidades</a>
+        <a href="referencias.html">Referências</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
